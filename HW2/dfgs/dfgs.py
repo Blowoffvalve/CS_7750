@@ -24,6 +24,8 @@ def depth_first_graph_search(problem):
             stop = time.time()
             print("We've expanded ", len(explored), " Nodes")
             print('Time: ', float(stop -start) *1000)
+			#print(node.solution, "Is the solution to the graph")
+			#print(node.path, "Is the path from the shuffled board to the goal board/n", "Note that the move suggested is to be done on the blank tile")
             return node
         
         if len(explored)>=1000000:#1 million nodes expanded
